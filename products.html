@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Kamloops Online Ordering for Local Coffee Shop Website - Products Page
+    </title>
+    <link rel="stylesheet" href="css/products.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <!-- ------------------- Navigation Menu ------------------- -->
+    <nav class="navigation-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="account.html">My Account</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+        <li><a href="#" onclick="signOutUser()">Sign Out</a></li>
+      </ul>
+    </nav>
+
+    <!-- --------------- Store Discount Offer ---------------- -->
+
+    <marquee id="coffee-discount"></marquee>
+
+    <!-- ------------------- Header ------------------- -->
+    <div class="page-header">
+      <h1>Coffee & Snacks</h1>
+    </div>
+
+    <!-- ------------------- Drink Prices ------------------- -->
+    <section class="page-products">
+      <table class="coffee-table">
+        <caption>
+          Drink Prices:
+        </caption>
+        <tr>
+          <th>Small (8 oz)</th>
+          <th>Medium (12 oz)</th>
+          <th>Large (16 oz)</th>
+        </tr>
+        <tr>
+          <td>$2.00</td>
+          <td>$2.75</td>
+          <td>$3.50</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- ------------------------ Drinks -------------------------- -->
+    <h2>Coffees</h2>
+    <div class="products-container">
+      <!-- Coffee -->
+      <div class="products">
+        <h3>Coffee</h3>
+        <img
+          src="images/Coffee.png"
+          alt="Light roast, medium roast, dark roast beans"
+        />
+        <div class="product-options">
+          Roast:
+          <select name="coffee-roast">
+            <option value="light">Light Roast</option>
+            <option value="medium" selected>Medium Roast</option>
+            <option value="dark">Dark Roast</option></select
+          ><br />
+          Size:
+          <select name="coffee-size">
+            <option value="small">Small - 8oz</option>
+            <option value="medium" selected>Medium - 12oz</option>
+            <option value="large">Large - 16oz</option></select
+          ><br />
+          Creamer: <input type="number" max="6" /><br />
+          Milk: <input type="number" max="6" /><br />
+          Non-Fat Milk: <input type="number" max="6" /><br />
+          Sugar: <input type="number" max="6" /><br />
+          Sweetener: <input type="number" max="6" /><br />
+          Honey: <input type="number" max="6" /><br />
+          Whipped Cream (+ $0.50):
+          <input type="checkbox" name="whipped-cream" /><br />
+          Sleeve: <input type="checkbox" />
+        </div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <!-- Hot Chocolate -->
+      <div class="products">
+        <h3>Hot Chocolate</h3>
+        <img src="images/Hotchocolate.png" alt="Hot chocolate, cocoa beans" />
+        <div class="product-options">
+          Size:
+          <select name="hotchoc-size">
+            <option value="small">Small - 8oz</option>
+            <option value="medium" selected>Medium - 12oz</option>
+            <option value="large">Large - 16oz</option></select
+          ><br />
+          Creamer: <input type="number" max="6" /><br />
+          Milk: <input type="number" max="6" /><br />
+          Non-Fat Milk: <input type="number" max="6" /><br />
+          Sugar: <input type="number" max="6" /><br />
+          Sweetener: <input type="number" max="6" /><br />
+          Honey: <input type="number" max="6" /><br />
+          1/2 Coffee: <input type="checkbox" /><br />
+          Whipped Cream (+ $0.50):
+          <input type="checkbox" name="whipped-cream" /><br />
+          Marshmallows (+ $0.50):
+          <input type="checkbox" name="marshmellows" /><br />
+          Sleeve: <input type="checkbox" />
+        </div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <!-- Tea -->
+      <div class="products">
+        <h3>Tea</h3>
+        <img src="images/Tea.png" alt="Tea varieties" />
+        <div class="product-options">
+          Flavour:
+          <select name="tea-flavour">
+            <option value="chai">Chai</option>
+            <option value="earlgrey" selected>Earl Grey</option>
+            <option value="peppermint">Peppermint</option>
+            <option value="green">Green</option>
+            <option value="chamomile">Chamomile</option></select
+          ><br />
+          Size:
+          <select name="tea-size">
+            <option value="small">Small - 8oz</option>
+            <option value="medium" selected>Medium - 12oz</option>
+            <option value="large">Large - 16oz</option></select
+          ><br />
+          Creamer: <input type="number" max="6" /><br />
+          Milk: <input type="number" max="6" /><br />
+          Non-Fat Milk: <input type="number" max="6" /><br />
+          Sugar: <input type="number" max="6" /><br />
+          Sweetener: <input type="number" max="6" /><br />
+          Honey: <input type="number" max="6" /><br />
+          Sleeve: <input type="checkbox" />
+        </div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- ------------------------- Snacks ------------------------ -->
+    <h2>Snacks</h2>
+    <div class="products-container">
+      <!-- Croissants -->
+      <div class="products">
+        <h3>Croissants</h3>
+        <h4>$2.65 each</h4>
+        <img src="images/Croissant.png" alt="Croissants" />
+        <div class="product-options">
+          Flavour:
+          <select name="croissant-flavour">
+            <option value="butter-cheese">Butter Cheese</option>
+            <option value="cream-cheese" selected>Cream Cheese</option>
+            <option value="ham-cheese">Ham & Cheese</option></select
+          ><br />
+          Quantity: <input type="number" max="30" /><br />
+          Warmed: <input type="checkbox" />
+        </div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <!-- Bagels -->
+      <div class="products">
+        <h3>Bagels</h3>
+        <h4>$2.50 each</h4>
+        <img src="images/Bagel.png" alt="Assorted bagels" />
+        <div class="product-options">
+          Flavour:
+          <select name="bagel-choice">
+            <option value="regular">Regular</option>
+            <option value="twelve-grain" selected>12-Grain</option>
+            <option value="everything">Everything</option>
+            <option value="cheese">Cheese</option></select
+          ><br />
+          Quantity: <input type="number" max="30" /><br />
+          Cream Cheese (+ $0.50):
+          <input type="checkbox" name="creamcheese" /><br />
+          Herb & Garlic (+ $0.50):
+          <input type="checkbox" name="herbgarlic" /><br />
+          Warmed: <input type="checkbox" />
+        </div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <!-- Slice of Pie -->
+      <div class="products">
+        <h3>Slice of Pie</h3>
+        <h4>$3.25 each</h4>
+        <img src="images/Pie.png" alt="Slices of pie" />
+        <div class="product-options">
+          Flavour:
+          <select name="pie-flavour">
+            <option value="apple">Apple</option>
+            <option value="cherry" selected>Cherry</option>
+            <option value="rhubarb">Rhubarb</option></select
+          ><br />
+          Quantity: <input type="number" max="30" /><br />
+          Warmed: <input type="checkbox" />
+        </div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- ------------------- Footer --------------------- -->
+    <footer class="footer">
+      &copy; 2025 Java X-press. All rights reserved.
+    </footer>
+
+    <!-- ------------------- JavaScript --------------------- -->
+
+    <script src="js/cart.js"></script>
+    <script src="js/discount.js"></script>
+    <script src="js/signOut.js"></script>
+  </body>
+</html>

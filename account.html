@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Kamloops Online Ordering for Local Coffee Shop Website - My Account Page
+    </title>
+    <link rel="stylesheet" href="css/account.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <!-- ------------------- Navigation menu ------------------- -->
+    <nav class="navigation-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+        <li><a href="index.html" onclick="signOutUser()">Sign Out</a></li>
+      </ul>
+    </nav>
+
+    <!-- ------------------- Page Header ------------------- -->
+
+    <div class="page-header">
+      <h1>My Account</h1>
+    </div>
+
+    <section class="profile">
+      <h3>My Profile</h3>
+      <label for="accountName">Name: </label>
+      <input type="text" id="accountName" />
+      <br />
+      <label for="accountEmail">Email/Username: </label>
+      <input type="email" id="accountEmail" />
+      <br />
+      <label for="accountDOB">Date of Birth: </label>
+      <input type="date" id="accountDOB" />
+      <br />
+      <label for="accountPrefName">Preferred (Order) Name: </label>
+      <input type="text" id="accountPrefName" />
+      <br />
+      <label for="accountPhone">Phone Number: </label>
+      <input type="tel" id="accountPhone" />
+    </section>
+
+    <!-- ----------------------- Footer ------------------------ -->
+
+    <footer class="footer">
+      &copy; 2025 Java X-press. All rights reserved.
+    </footer>
+
+    <!-- ----------------------- JavaScript ----------------------- -->
+
+    <script src="js/account.js"></script>
+    <script src="js/signOut.js"></script>
+  </body>
+</html>

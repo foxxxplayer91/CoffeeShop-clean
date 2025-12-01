@@ -1,0 +1,86 @@
+body {
+  font-size: 16px;
+  font-family: Arial;
+  background-color: #38220f;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+/* -------------------- Navigation Menu -------------------- */
+
+.navigation-menu {
+  background: rgb(5, 215, 166);
+  color: white;
+  height: 6vh;
+  list-style: none;
+}
+
+.navigation-menu ul {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-menu li {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 13px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.navigation-menu li:hover {
+  color: #e6b17e;
+}
+
+.navigation-menu a {
+  text-decoration: none;
+  color: rgb(246, 220, 118); /* Cream color */
+  font-weight: bold;
+}
+
+.navigation-menu a:hover {
+  color: #38220f;
+}
+
+.navigation-menu a:visited {
+  color: rgb(185, 185, 185);
+}
+
+.navigation-menu a:active {
+  color: green;
+}
+
+/* -------------------- Header -------------------- */
+
+.page-header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.profile {
+  text-align: center;
+  height: 65vh;
+  margin-bottom: 40px;
+}
+
+.profile input {
+  line-height: 2;
+  margin-bottom: 10px;
+}
+
+/* -------------------- Footer -------------------- */
+
+.footer {
+  background: #332116;
+  color: white;
+  text-align: center;
+  line-height: 6vh;
+  /*font-size: 0.9rem;*/
+}

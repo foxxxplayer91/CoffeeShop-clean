@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Kamloops Online Ordering for Local Coffee Shop Website - Checkout Page
+    </title>
+    <link rel="stylesheet" href="css/checkout.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <!-- ------------------- Navigation menu ------------------- -->
+    <nav class="navigation-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="account.html">My Account</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+        <li><a href="index.html" onclick="signOutUser()">Sign Out</a></li>
+      </ul>
+    </nav>
+
+    <!-- ------------------- Page Header ------------------- -->
+
+    <header class="page-header">
+      <h1>Checkout</h1>
+    </header>
+
+    <!-- ------------------- Balance Display ------------------- -->
+
+    <div class="balance-display">
+      <h3>
+        Balance Due: $
+        <div class="js-balance"></div>
+      </h3>
+      <!-- JS will display balance due-->
+    </div>
+
+    <!-- ------------------- Payment Option Section ------------------- -->
+
+    <h3>How would you like to pay?</h3>
+    <section class="payment-options">
+      <!-- ----------- Pay at Store Option ----------- -->
+      <div class="pay-store">
+        Pay at Store: <input type="checkbox" name="pay-store" /> <br /><br />
+      </div>
+
+      <!-- ----------- Pay Now Option/Customer Card Form ----------- -->
+      <form class="payment-form">
+        <label>Pay now Online:</label>
+        <fieldset id="custInfo">
+          <legend>Customer Card Information *</legend>
+
+          <label for="custCardName">Name on Card:</label>
+          <input
+            name="custCardName"
+            id="custCardName"
+            type="text"
+            placeholder="John Smith"
+          />
+          <br /><br />
+
+          <label for="custCardNumber">Card Number:</label>
+          <input
+            name="custCardNumber"
+            id="custCardNumber"
+            type="text"
+            pattern="\d{4}-\d{4}-\d{4}-\d{4}"
+            placeholder="1234-5678-8765-4321"
+          />
+          <br /><br />
+
+          <label for="custExpiryDate">Expiry Date:</label>
+          <input
+            name="custExpiryDate"
+            id="custExpiryDate"
+            type="text"
+            pattern="\d{2}/\d{2}"
+            placeholder="12/32"
+          />
+
+          <label for="custCVV">CVV:</label>
+          <input
+            name="custCVV"
+            id="custCVV"
+            type="text"
+            pattern="\d{3}"
+            placeholder="123"
+          />
+          <br /><br />
+
+          <label for="custCardPostal">Card Postal Code:</label>
+          <input
+            name="custCardPostal"
+            id="custCardPostal"
+            type="text"
+            maxlength="6"
+            placeholder="V2G1V3"
+          />
+          <br /><br />
+        </fieldset>
+
+        <input type="submit" value="Pay Now" />
+        <input type="reset" value="Reset" />
+      </form>
+
+      <!-- -------------- Customer Request Text Area -------------- -->
+      <div class="custRequest">
+        <label for="request">Order Requests:</label>
+
+        <!-- JS with request add to store display in order-->
+        <textarea
+          name="request"
+          id="request"
+          rows="6"
+          cols="60"
+          placeholder="i.e. Half whipped cream, on small light roast coffee"
+        >
+        </textarea>
+      </div>
+    </section>
+
+    <!-- ------------------- Footer --------------------- -->
+
+    <footer class="footer">
+      &copy; 2025 Java X-press. All rights reserved.
+    </footer>
+
+    <!-- ------------------- JavaScript --------------------- -->
+
+    <script src="js/signOut.js"></script>
+    <script src="js/checkout.js"></script>
+  </body>
+</html>

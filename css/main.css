@@ -1,0 +1,170 @@
+body {
+  font-size: 16px;
+  font-family: Arial;
+  background-color: #38220f;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+/* ------------------- Welcome Header --------------------- */
+
+.row1 {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+.welcome {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.welcome h1 {
+  font-size: 3rem;
+}
+.slogan {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.logo {
+  margin: auto 0 auto 0;
+}
+.logo img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: auto;
+}
+
+/* ------------------- Navigation Menu --------------------- */
+
+.navigation-menu {
+  background: rgb(5, 215, 166);
+  color: #e6b17e;
+  height: 6vh;
+  list-style: none;
+}
+
+.navigation-menu ul {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-menu li {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 13px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.navigation-menu li:hover {
+  color: #38220f;
+}
+
+.navigation-menu a {
+  text-decoration: none;
+  color: rgb(246, 220, 118); /* Cream color */
+  font-weight: bold;
+}
+
+.navigation-menu a:hover {
+  color: #38220f;
+}
+
+.navigation-menu a:visited {
+  color: rgb(185, 185, 185);
+}
+
+.navigation-menu a:active {
+  color: green;
+}
+
+/* ------------------- Store & Instructional Info --------------------- */
+
+.page-info {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background: #fffdfc;
+  gap: 10px;
+}
+
+/* ------------------- Column 1 with 2 Rows --------------------- */
+
+.col1 {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+
+/* -------------------- Nested 1x2 grid ------------------ */
+.mini-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 1x2 */
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* ------------- Contact Info ----------*/
+
+.contact-info {
+  background: #e8d2bc;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+}
+
+/* ------------- Business Hours Table ----------*/
+.business-hours {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.business-hours th,
+.business-hours td {
+  border: 1px solid #38220f;
+  padding: 10px;
+  text-align: center;
+}
+
+.business-hours th {
+  background-color: #e6b17e;
+  font-weight: bold;
+}
+
+.business-hours td {
+  background-color: #f6e6d5;
+}
+
+.business-hours,
+td:hover {
+  background-color: rgb(5, 215, 166);
+}
+
+/* --------------- Instructional Video (COL 2) --------------- */
+.video-section {
+  padding: 15px;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+}
+
+/* ------------------- Footer -------------------- */
+
+.footer {
+  background: #332116;
+  color: white;
+  text-align: center;
+  line-height: 6vh;
+  /*font-size: 0.9rem;*/
+}

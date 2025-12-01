@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Kamloops Online Ordering for Local Coffee Shop Website - Sign In Page
+    </title>
+    <link rel="stylesheet" href="css/signIn.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <!-- ------------------- Navigation menu ------------------- -->
+    <nav class="navigation-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="account.html">My Account</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="#" onclick="signOutUser()">Sign Out</a></li>
+      </ul>
+    </nav>
+
+    <!-- ------------------- Page Header ------------------- -->
+
+    <header class="page-header">
+      <h1>Java X-press Sign In</h1>
+    </header>
+
+    <!-- ------------------- Sign In Form ------------------- -->
+    <section class="signIn-input">
+      <h3>Sign In or Create an Account</h3>
+
+      <label for="signIn-email">Email/Username:</label>
+      <input
+        type="email"
+        name="signIn-email"
+        placeholder="johnsmith@outlook.com"
+      />
+      <br />
+
+      <label for="signIn-passwrod">Password:</label>
+      <input type="password" name="signIn-password" />
+      <br /><br />
+      <button class="signIn-button" onclick="signIn()">SIGN IN</button>
+      <br /><br />
+      <a href="createAccount.html" class="createAccount-button"
+        >Create Account</a
+      >
+    </section>
+
+    <!-- ------------------- Footer --------------------- -->
+
+    <footer class="footer">
+      &copy; 2025 Java X-press. All rights reserved.
+    </footer>
+
+    <!-- ------------------- JavaScript --------------------- -->
+
+    <script src="js/signOut.js"></script>
+  </body>
+</html>

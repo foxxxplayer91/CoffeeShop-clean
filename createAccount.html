@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Kamloops Online Ordering for Local Coffee Shop Website - Create Account
+      Page
+    </title>
+    <link rel="stylesheet" href="css/createAccount.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <!-- ------------------- Navigation menu ------------------- -->
+    <nav class="navigation-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="account.html">My Account</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="signIn.html">Sign In</a></li>
+        <li><a href="index.html" onclick="signOutUser()">Sign Out</a></li>
+      </ul>
+    </nav>
+
+    <!-- ------------------- Page Header ------------------- -->
+
+    <header class="page-header">
+      <h1>Create Account</h1>
+    </header>
+
+    <!-- ------------------- Create Account Form ------------------- -->
+
+    <section class="createAccount-input">
+      <form class="createAccount-form">
+        <h3>Complete Fields Below</h3>
+        <label for="firstName">First Name *:</label>
+        <input
+          type="text"
+          maxlength="20"
+          name="firstName"
+          id="firstName"
+          placeholder="John"
+        />
+        <label for="lastName">Last Name *:</label>
+        <input
+          type="text"
+          maxlength="20"
+          name="lastName"
+          id="lastName"
+          placeholder="Smith"
+        />
+
+        <br />
+        <label for="create-email">Email/Username *:</label>
+        <input
+          type="email"
+          maxlength="45"
+          name="create-email"
+          id="create-email"
+          placeholder="johnsmith@outlook.com"
+        />
+
+        <br />
+        <label for="create-password">Password *:</label>
+        <input type="password" name="create-password" id="create-password" />
+
+        <br />
+        <label for="create-confirm">Confirm Password:</label>
+        <input
+          type="password"
+          name="create-passwordConfirm"
+          id="create-passwordConfirm"
+        />
+        <br />
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob" />
+        <br />
+        <label for="pref-name">Preferred Order Name:</label>
+        <input type="text" name="pref-name" id="pref-name" />
+        <br />
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone" placeholder="" />
+        <br />
+        <button
+          class="createNewAccount-button"
+          type="button"
+          onclick="createNewAccount();"
+        >
+          Create New Account
+        </button>
+      </form>
+    </section>
+    <!-- ------------------- Footer --------------------- -->
+    <footer class="footer">
+      &copy; 2025 Java X-press. All rights reserved.
+    </footer>
+
+    <!-- ------------------- Script --------------------- -->
+    <script src="js/createAccount.js"></script>
+    <script src="js/signOut.js"></script>
+  </body>
+</html>
