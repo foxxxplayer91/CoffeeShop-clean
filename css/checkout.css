@@ -41,7 +41,7 @@ body {
 
 .navigation-menu a {
   text-decoration: none;
-  color: rgb(246, 220, 118); /* Cream color */
+  color: rgb(246, 220, 118);
   font-weight: bold;
 }
 
@@ -70,6 +70,8 @@ body {
   display: inline-block;
 }
 
+/* --------------------- Payment Options----------------- */
+
 .payment-options {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -93,6 +95,8 @@ body {
   grid-row: 2;
 }
 
+/* -------------- Customer Request Textbox Dummy ------------- */
+
 .custRequest {
   margin-top: auto;
   margin-bottom: auto;
@@ -100,10 +104,11 @@ body {
   grid-row: 1 / span 2;
 }
 
+/* --------------------- Footer --------------------- */
+
 .footer {
   background: #332116;
   color: white;
   text-align: center;
   line-height: 6vh;
-  /*font-size: 0.9rem;*/
 }

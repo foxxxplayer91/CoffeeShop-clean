@@ -18,16 +18,16 @@
         <li><a href="account.html">My Account</a></li>
         <li><a href="checkout.html">Checkout</a></li>
         <li><a href="signin.html">Sign In</a></li>
-        <li><a href="index.html" onclick="signOutUser()">Sign Out</a></li>
+        <li><a href="#" onclick="signOutUser()">Sign Out</a></li>
       </ul>
     </nav>
 
     <!-- ------------------- Page Header ------------------- -->
-
     <div class="page-header">
       <h1>My Cart</h1>
     </div>
 
+    <!-- -------------- Schedule Options --------------- -->
     <section class="schedule-options">
       <div class="schedule-option">
         Order for Now: <input type="checkbox" name="for-now" />
@@ -37,22 +37,16 @@
       </div>
     </section>
 
-    <!-- -------------- Order prices and summary --------------- -->
-
+    <!-- -------------- Order Prices & Summary --------------- -->
     <section class="order-details">
       <div class="order-list">
         <h2>Order List</h2>
-
         <div class="customer-items"></div>
-        <!--JS will as cust. items list-->
       </div>
+
       <div class="summary-total">
         <h2>Summary & Total</h2>
-
         <div class="customer-summary"></div>
-        <!--JS will as cust. items list-->
-
-        <!-- -------CHECKOUT BUTTON -------- -->
         <button name="checkout-button">CHECKOUT</button>
       </div>
     </section>
@@ -63,7 +57,7 @@
     </footer>
 
     <!-- ----------------------- JavaScript ------------------------ -->
-    <script src="js/displayCart.js"></script>
+    <script src="js/cart.js"></script>
     <script src="js/signOut.js"></script>
   </body>
 </html>

@@ -3,28 +3,29 @@ body {
   font-family: Arial;
   background-color: #38220f;
   border: 1px solid white;
-  border-radius: 1;
+  border-radius: 10px;
   padding: 10px;
   color: white;
 }
 
+/* --------------------- Schedule Options ----------------- */
 .schedule-options {
   text-align: center;
+  margin-bottom: 10px;
 }
 .schedule-option {
-  font-size: 1.4em;
+  font-size: 1.2em;
   display: inline-block;
+  margin: 0 10px;
 }
 
 /* --------------------- Navigation Menu ----------------- */
-
 .navigation-menu {
   background: rgb(5, 215, 166);
   color: #e6b17e;
   height: 6vh;
   list-style: none;
 }
-
 .navigation-menu ul {
   display: grid;
   width: 100%;
@@ -33,61 +34,65 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .navigation-menu li {
   display: inline-block;
   margin-right: auto;
   margin-left: auto;
   margin-top: 13px;
-  text-align: center;
   font-weight: bold;
 }
-
 .navigation-menu li:hover {
   color: #38220f;
 }
-
 .navigation-menu a {
   text-decoration: none;
-  color: rgb(246, 220, 118); /* Cream color */
+  color: rgb(246, 220, 118);
   font-weight: bold;
 }
-
 .navigation-menu a:hover {
   color: #38220f;
 }
-
 .navigation-menu a:visited {
   color: rgb(185, 185, 185);
 }
-
 .navigation-menu a:active {
   color: green;
 }
 
+/* -------------------------- Header ------------------------*/
 .page-header {
   text-align: center;
   padding: 20px 0;
 }
 
+/* -------------------------- Order Summary & Totals ------------------------*/
 .order-details {
-  text-align: center;
   display: grid;
-  width: 100%;
   grid-template-columns: 1fr 1fr;
-  height: 85vh;
+  gap: 20px;
+  margin-top: 10px;
 }
 
 .order-list,
 .summary-total {
-  display: inline-block;
   border: 1px solid white;
+  padding: 10px;
+  min-height: 400px;
 }
 
+.customer-items {
+  margin-top: 10px;
+}
+
+.customer-items button {
+  margin-top: 5px;
+}
+
+/* -------------------------- Footer ------------------------*/
 .footer {
   background: #332116;
   color: white;
   text-align: center;
   line-height: 6vh;
-  /*font-size: 0.9rem;*/
+  margin-top: 20px;
 }

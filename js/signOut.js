@@ -1,16 +1,10 @@
 /* ------------------ Sign Out the User --------------- */
+
 function signOutUser() {
-  /* ----- Remove all stored account and cart info ----- */
-  localStorage.removeItem("firstName");
-  localStorage.removeItem("lastName");
-  localStorage.removeItem("email");
-  localStorage.removeItem("phone");
-  localStorage.removeItem("address");
-  localStorage.removeItem("password");
-
+  /* ----- Remove only signed-in status and cart info ----- */
+  localStorage.removeItem("signedIn");
   localStorage.removeItem("cart");
-
-  localStorage.removeItem("isSignedIn");
+  localStorage.removeItem("grandTotal"); // reset balance
 
   /* ------- Redirect to Home page --------- */
   window.location.href = "index.html";

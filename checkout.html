@@ -18,7 +18,7 @@
         <li><a href="account.html">My Account</a></li>
         <li><a href="cart.html">Cart</a></li>
         <li><a href="signin.html">Sign In</a></li>
-        <li><a href="index.html" onclick="signOutUser()">Sign Out</a></li>
+        <li><a href="#" onclick="signOutUser()">Sign Out</a></li>
       </ul>
     </nav>
 
@@ -35,7 +35,6 @@
         Balance Due: $
         <div class="js-balance"></div>
       </h3>
-      <!-- JS will display balance due-->
     </div>
 
     <!-- ------------------- Payment Option Section ------------------- -->
@@ -102,6 +101,7 @@
           <br /><br />
         </fieldset>
 
+        <!-- ------ PAY NOW BUTTON --------->
         <input type="submit" value="Pay Now" />
         <input type="reset" value="Reset" />
       </form>
@@ -110,7 +110,6 @@
       <div class="custRequest">
         <label for="request">Order Requests:</label>
 
-        <!-- JS with request add to store display in order-->
         <textarea
           name="request"
           id="request"

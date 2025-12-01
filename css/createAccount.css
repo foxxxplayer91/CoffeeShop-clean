@@ -41,7 +41,7 @@ body {
 
 .navigation-menu a {
   text-decoration: none;
-  color: rgb(246, 220, 118); /*Creammmmmy colour*/
+  color: rgb(246, 220, 118);
   font-weight: bold;
 }
 
@@ -71,24 +71,18 @@ textarea:focus {
 }
 
 input#name:focus:valid,
-input#street:focus:valid,
-input#city:focus:valid,
-input#province:focus:valid,
 input#postalcode:focus:valid,
 input#phone:focus:valid,
-input#mail:focus:valid,
+input#email:focus:valid,
 input#checkbox:focus:valid,
 input#text:focus:valid {
   background-color: rgb(220, 255, 220);
 }
 
 input#name:focus:invalid,
-input#street:focus:invalid,
-input#city:focus:invalid,
-input#province:focus:invalid,
 input#postalcode:focus:invalid,
 input#phone:focus:invalid,
-input#mail:focus:invalid,
+input#email:focus:invalid,
 input#checkbox:focus:invalid,
 input#text:focus:invalid {
   background-color: rgb(255, 232, 233);

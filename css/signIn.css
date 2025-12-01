@@ -41,7 +41,7 @@ body {
 
 .navigation-menu a {
   text-decoration: none;
-  color: rgb(246, 220, 118); /* Cream color */
+  color: rgb(246, 220, 118);
   font-weight: bold;
 }
 
@@ -78,6 +78,8 @@ a {
   margin-bottom: 10px;
 }
 
+/* --------------------- Create Account Button ----------------- */
+
 .createAccount-button {
   border: 3px solid rgb(5, 215, 166);
   padding: 15px;
@@ -85,10 +87,11 @@ a {
   text-decoration: none;
 }
 
+/* --------------------- Footer ----------------- */
+
 .footer {
   background: #332116;
   color: white;
   text-align: center;
   line-height: 6vh;
-  /*font-size: 0.9rem;*/
 }

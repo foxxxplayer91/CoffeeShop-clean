@@ -3,7 +3,7 @@ window.onload = function () {
   attachCheckoutHandler();
 };
 
-// Display cart items and total
+/* ---- Display cart items and total ----- */
 
 function displayCartItems() {
   const cartDiv = document.querySelector(".customer-items");
@@ -41,7 +41,7 @@ function displayCartItems() {
   localStorage.setItem("grandTotal", grandTotal.toFixed(2)); // store total for checkout
 }
 
-// Attach checkout button handler
+/* ------- Attach checkout button handler ---------- */
 
 function attachCheckoutHandler() {
   const checkoutBtn = document.querySelector("button[name='checkout-button']");
@@ -65,7 +65,8 @@ function attachCheckoutHandler() {
       return;
     }
 
-    // If "Order for Later", ask for desired time and validate
+    /* ------- If "Order for Later", ask for desired time and validate ------- */
+
     if (forLater) {
       let userTime = prompt(
         "Enter desired pickup time (HH:MM, 24-hour format)"
@@ -85,12 +86,14 @@ function attachCheckoutHandler() {
     }
 
     localStorage.setItem("pickup-option", forNow ? "Now" : "Later");
-    // Proceed to checkout page
+    /* ------ Proceed to checkout page ------- */
+
     window.location.href = "checkout.html";
   });
 }
 
-// Business hours map
+/* ------- Business hours map ------- */
+
 const businessHours = {
   0: { start: 7, end: 13 }, // Sunday
   1: { start: 5, end: 16 }, // Monday
@@ -101,7 +104,8 @@ const businessHours = {
   6: { start: 6, end: 15 }, // Saturday
 };
 
-// Validate pickup time is within business hours
+/* ----- Validate pickup time is within business hours ------ */
+
 function isValidPickupTime(timeStr) {
   const [hourStr, minuteStr] = timeStr.split(":");
   const hour = parseInt(hourStr, 10);
